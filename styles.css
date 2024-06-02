@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Lodeh";
+    src: url(./fonts/LodehRegular.ttf);
+}
+
+@font-face {
+    font-family: "RockAway";
+    src: url(./fonts/RockAway.ttf);
+}
+
+
+
+
 body {
     height: 100vh;
     padding: 0;
