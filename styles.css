@@ -36,8 +36,8 @@ img {
 .logo {
     color: white;
     position: absolute;
-    top: 25%;
-    left: 25%;
-    font-family: "RockAway";
-    font-size: 50px;
+    top: 100px;
+    left: 25px;
+    font-family: "Lodeh";
+    font-size: 70px;
 }
