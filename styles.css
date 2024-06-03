@@ -152,3 +152,12 @@ button {
     font-family: "Raleway";
     padding-left: 60px;
 }
+
+input:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    outline: 2px solid forestgreen;
+}
+
+input:invalid {
+    outline: 2px solid rgb(221, 94, 94);
+}
