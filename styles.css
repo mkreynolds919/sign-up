@@ -23,9 +23,8 @@
     src: url(./fonts/Raleway-Light.ttf);
 }
 
-
 body {
-    height: 100vh;
+    height: 100dvh;
     padding: 0;
     margin: 0;
     display: flex;
@@ -34,7 +33,6 @@ body {
 .sidebar {
     width: 40%;
     height: 100%;
-    position: relative;
     text-align: center;
     color: white;
     flex: 1;
@@ -43,7 +41,9 @@ body {
 .content-container {
     width: 60%;
     background-color: rgba(255, 255, 255, 0.838);
-    flex: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -71,7 +71,6 @@ img {
     font-family: "Raleway";
     font-size: 18px;
     padding: 60px 0px 5px 60px ;
-    height: 35%;
     margin: 0;
 }
 
@@ -97,7 +96,6 @@ li {
 }
 
 .form-container {
-    height: 30%;
     padding: 60px;
     width: 60%;
 }
@@ -153,5 +151,5 @@ button {
 .promo-container {
     font-size: 20px;
     font-family: "Raleway";
-    padding: 40px 0px 0px 60px;
+    padding-left: 60px;
 }
