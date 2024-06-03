@@ -9,10 +9,19 @@
 }
 
 @font-face {
-    font-family: "Gotham";
-    src: url(./fonts/Gotham.ttf);
+    font-family: "RalewayBoldItalic";
+    src: url(./fonts/Raleway-BoldItalic.ttf);
 }
 
+@font-face {
+    font-family: "Raleway";
+    src: url(./fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "RalewayLight";
+    src: url(./fonts/Raleway-Light.ttf);
+}
 
 
 body {
@@ -59,17 +68,27 @@ img {
 
 .desc-container {
     width: 80%;
-    font-family: "Gotham";
+    font-family: "Raleway";
     font-size: 18px;
     padding: 60px 30px 5px 60px;
     height: 35%;
 }
 
+.desc-container div {
+    margin: 10px;
+}
+
 .text-q {
-    font-size: 30px;
+    font-size: 35px;
+    font-family: "RalewayBoldItalic";
+}
+
+.text-body {
+    font-family: "Raleway";
 }
 
 li {
     margin: 10px;
     list-style-type: none;
+    font-family: "RalewayLight";
 }
