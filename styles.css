@@ -8,6 +8,10 @@
     src: url(./fonts/RockAway.ttf);
 }
 
+@font-face {
+    font-family: "Gotham";
+    src: url(./fonts/Gotham.ttf);
+}
 
 
 
@@ -15,6 +19,7 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .sidebar {
@@ -23,10 +28,13 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    flex: 1;
 }
 
 .content-container {
     width: 60%;
+    background-color: rgba(255, 255, 255, 0.838);
+    flex: auto;
 }
 
 img {
@@ -47,4 +55,12 @@ img {
     bottom: 5px;
     left: 5px;
     font-size: 8px;
+}
+
+.desc-container {
+    width: 60%;
+    font-family: "Gotham";
+    font-size: 25px;
+    padding: 120px 30px 5px 30px;
+    height: 35%;
 }
