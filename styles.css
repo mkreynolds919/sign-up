@@ -23,6 +23,16 @@
     src: url(./fonts/Raleway-Light.ttf);
 }
 
+* {
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 html {
     font-size: 12px;
 }
@@ -31,26 +41,31 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    overflow: hidden;
 }
 
 .sidebar {
     width: 40%;
-    height: 100vh;
+    height: 100dvh;
     text-align: center;
     color: white;
     flex: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .content-container {
     width: 60%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.838);
     display: flex;
     flex-direction: column;
+    gap: 5%;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -59,7 +74,7 @@ img {
     top: 6rem;
     left: 2rem;
     font-family: "Lodeh";
-    font-size: 3.5rem;
+    font-size: clamp(20px, 3vw, 65px);
 }
 
 .alt {
@@ -68,10 +83,11 @@ img {
     bottom: 5px;
     left: 5px;
     font-size: 8px;
+    margin: 0;
 }
 
 .desc-container {
-    width: 80%;
+    width: 95%;
     font-family: "Raleway";
     padding: 2rem 0px 5px 2rem ;
     margin: 0;
@@ -79,16 +95,18 @@ img {
 
 .desc-container div {
     margin: 1rem 0 1rem 0;
+    width: 90%;
 }
 
 .text-q {
-    font-size: 2rem;
+    font-size: clamp(25px, 2vw, 50px);
     font-family: "RalewayBoldItalic";
     color: rgb(27, 105, 27);
 }
 
 .text-body {
     font-family: "Raleway";
+    font-size: clamp(12px, 1vw, 35px)
 }
 
 li {
@@ -104,7 +122,7 @@ li {
 } 
 
 .form-title {
-    font-size: 1rem;
+    font-size: clamp(20px, 1.5vw, 35px);
     margin-bottom: 1rem;
     font-family: "Raleway";
     
@@ -121,6 +139,7 @@ form {
     flex-direction: column;
     font-family: "Raleway";
     color: rgb(27, 109, 27);
+    font-size: clamp(16px, 1vw, 35px)
 }
 
 form div {
@@ -153,7 +172,7 @@ button {
 }
 
 .promo-container {
-    font-size: 1.2rem;
+    font-size: clamp(25px, 1vw, 35px);
     font-family: "Raleway";
     padding-left: 2rem;
 }
